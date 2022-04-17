@@ -1,0 +1,10 @@
+@import './parts/_colors.scss';
+@import './parts/_typography.scss';
+@import './parts/_buttons.scss';
+@import './parts/_infoBox.scss';
+@import './parts/_navbar.scss';
+
+body{
+  background: url('../assets/background-stars.svg') center  no-repeat fixed $commonBackgroundColor;
+  margin: 0;
+}

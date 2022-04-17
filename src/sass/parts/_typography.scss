@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@500&family=League+Spartan:wght@400;700&display=swap');
+html{
+    font-size: 14px;
+}
+body {
+    font-family: 'League Spartan', sans-serif;
+    font-size: inherit;
+    font-weight: 400;
+    line-height: 25px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: $whiteColor;
+    h1,
+    h2{
+        font-family: 'Antonio', sans-serif;
+        font-weight: 500;
+    }
+    h1{
+        font-size: 80px;
+        line-height: 103px;
+    }
+    h2{
+        font-size: 40px;
+        line-height: 52px;
+        
+    }
+    button{
+        font-size: 12px;
+        line-height: 25px;
+        font-weight: 700;
+    }
+    .navbar{
+        .title{
+            font-family: 'Antonio', sans-serif;
+            font-weight: 400;
+            font-size: 28px;
+            line-height: 36px;
+            text-transform: uppercase;
+            letter-spacing: -1.05px;
+        }
+        .planet-header-container{
+            font-weight: 700;
+            font-size: 11px;
+            line-height: 25px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            .planet-header-item{
+                opacity: 0.75;
+            }
+        }
+    }
+}
