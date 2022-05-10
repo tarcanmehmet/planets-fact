@@ -1,10 +1,10 @@
 import React from 'react';
 
-const Button = () => {
+const Button = ({index, data, activeState}) => {
     return(
-        <button className='btn-large active mercury'>
-            <span>01</span>
-            SURFACE GEOLOGY
+        <button className={`btn-large mercury ${activeState && 'active'}`}>
+            <span>{index}</span>
+            {data}
         </button>
     )
 }
