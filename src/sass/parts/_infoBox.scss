@@ -1,6 +1,8 @@
 .info-box{
-    border: 1px solid $whiteColor;
+    border: 1px solid $commonBorderColor;
     padding: 0 2rem;
+    min-width: 255px;
+    box-sizing: border-box;
     h4{
         opacity: 0.5;
     }

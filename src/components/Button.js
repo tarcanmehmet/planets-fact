@@ -1,8 +1,9 @@
 import React from 'react';
 
-const Button = ({index, data, activeState}) => {
+const Button = ({index, data, activeState, planet, changeSelectedInfo}) => {
+    const selectInfoChanger = data.split(' ')[0];
     return(
-        <button className={`btn-large mercury ${activeState && 'active'}`}>
+        <button onClick={()=>changeSelectedInfo(selectInfoChanger)} className={`btn-large ${planet.toLowerCase()} ${activeState && 'active'}`}>
             <span>{index}</span>
             {data}
         </button>

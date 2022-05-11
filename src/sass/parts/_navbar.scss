@@ -17,6 +17,56 @@
         gap: 1rem;
         .planet-header-item{
             cursor: pointer;
+            &:hover{
+                &.mercury{
+                    &::before{
+                        content: '';
+    
+                    }
+                  }
+                  &.venus{
+                      &::before{
+                          content: '';
+    
+                      }
+                  }
+                  &.earth{
+                      &::before{
+                          content: '';
+    
+                      }
+                  }
+                  &.mars{
+                      &::before{
+                          content: '';
+    
+                      }
+                  }
+                  &.jupiter{
+                      &::before{
+                          content: '';
+    
+                      }
+                  }
+                  &.saturn{
+                      &::before{
+                          content: '';
+    
+                      }
+                  }
+                  &.uranus{
+                      &::before{
+                          content: '';
+    
+                      }
+                  }
+                  &.neptune{
+                      &::before{
+                          content: '';
+    
+                      }
+                  }
+            }
         }
     }
 }

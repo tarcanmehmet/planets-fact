@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Navbar = ({planetList}) => {
+const Navbar = ({planetList, changeSelectedPlanet}) => {
 
     return(
         <nav className='navbar'>
@@ -8,7 +8,7 @@ const Navbar = ({planetList}) => {
             <div className='planet-header-container'>
                 {planetList.map((planet)=> {
                     return(
-                        <div className='planet-header-item'>{planet.name}</div>
+                        <div className={`planet-header-item ${planet.name.toLowerCase()}`} onClick={() => changeSelectedPlanet(planet.name)}>{planet.name}</div>
                     );
                 })}
             </div>

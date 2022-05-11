@@ -1,55 +1,60 @@
 button{
-    &.btn-large{
-        padding: .85rem 2rem;
-        min-width: 350px;
-        text-align: left;
-      &.default{
-        background-color: transparent;
-        border: 1px solid $whiteColor;
+ 
+  &.btn-large{
+      padding: .85rem 2rem;
+      min-width: 350px;
+      text-align: left;
+      color: #FFF;
+      cursor: pointer;
+      background-color: transparent;
+      border: 1px solid $commonBorderColor;
+    &.default{
+      background-color: transparent;
+      border: 1px solid $whiteColor;
+    }
+    &:hover{
+      background-color: $buttonHoverColor;
+      border: 1px solid transparent;
+    }
+    &.active{
+      &.mercury{
+        background-color: $mercury;
+        border: 1px solid $mercury;
       }
-      &:hover{
-        background-color: $buttonHoverColor;
-        border: 1px solid transparent;
+      &.venus{
+        background-color: $venus;
+        border: 1px solid $venus;
       }
-      &.active{
-        &.mercury{
-          background-color: $mercury;
-          border: 1px solid $mercury;
-        }
-        &.venus{
-          background-color: $venus;
-          border: 1px solid $venus;
-        }
-        &.earth{
-          background-color: $earth;
-          border: 1px solid $earth;
-        }
-        &.mars{
-          background-color: $mars;
-          border: 1px solid $mars;
-        }
-        &.jupiter{
-          background-color: $jupiter;
-          border: 1px solid $jupiter;
-        }
-        &.saturn{
-          background-color: $saturn;
-          border: 1px solid $saturn;
-        }
-        &.uranus{
-          background-color: $uranus;
-          border: 1px solid $uranus;
-        }
-        &.neptune{
-          background-color: $neptune;
-          border: 1px solid $neptune;
-        }
+      &.earth{
+        background-color: $earth;
+        border: 1px solid $earth;
       }
-      span{
-          opacity: 0.5;
-          margin-right: 2rem;
-
+      &.mars{
+        background-color: $mars;
+        border: 1px solid $mars;
+      }
+      &.jupiter{
+        background-color: $jupiter;
+        border: 1px solid $jupiter;
+      }
+      &.saturn{
+        background-color: $saturn;
+        border: 1px solid $saturn;
+      }
+      &.uranus{
+        background-color: $uranus;
+        border: 1px solid $uranus;
+      }
+      &.neptune{
+        background-color: $neptune;
+        border: 1px solid $neptune;
       }
     }
+    span{
+        opacity: 0.5;
+        margin-right: 2rem;
+
+    }
   }
+}
   

@@ -3,6 +3,8 @@
 @import './parts/_buttons.scss';
 @import './parts/_infoBox.scss';
 @import './parts/_navbar.scss';
+@import './parts/_planetArea.scss';
+@import './parts/_planetBottomArea.scss';
 
 body{
   background: url('../assets/background-stars.svg') center  no-repeat fixed $commonBackgroundColor;

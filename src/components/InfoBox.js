@@ -1,10 +1,10 @@
 import React from 'react';
 
-const InfoBox = () => {
+const InfoBox = ({title, value}) => {
     return(
         <div className='info-box'>
-            <h4>Rotation Time</h4>
-            <h2>58.6 DAYS</h2>
+            <h4>{title}</h4>
+            <h2>{value}</h2>
         </div>
     )
 }

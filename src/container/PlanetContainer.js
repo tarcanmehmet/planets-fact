@@ -1,8 +1,10 @@
 import React from 'react';
 import {useState} from 'react';
-import PlanetInfoArea from './PlanetInfoArea';
+import PlanetBottomArea from '../components/PlanetBottomArea';
+import PlanetArea from '../components/PlanetArea';
+
 const PlanetContainer = ({selectedPlanet}) => {
-    const [selectedInfo, useSelectedInfo] = useState('Overview');
+    const [selectedInfo, setSelectedInfo] = useState('Overview');
     const overView = {
         image: selectedPlanet.images.planet,
         info: selectedPlanet.overview.content,
@@ -14,14 +16,18 @@ const PlanetContainer = ({selectedPlanet}) => {
         source: selectedPlanet.structure.source
     };
     const surface = {
-        image: selectedPlanet.images.internal,
+        image: selectedPlanet.images.planet,
         imageSurface: selectedPlanet.images.geology,
         info: selectedPlanet.geology.content,
         source: selectedPlanet.geology.source
     };
+    const changeSelectedInfo = (data) => {
+        setSelectedInfo(data);
+    }
     return(
         <div className='planet-box'>
-            <PlanetInfoArea planetName={selectedPlanet.name} selectedInfo={selectedInfo} infoType={selectedInfo === 'Overview' ? overView : selectedInfo === 'Structure' ? internalStructure : surface} />
+            <PlanetArea planetName={selectedPlanet.name} selectedInfo={selectedInfo} infoType={selectedInfo === 'Overview' ? overView : selectedInfo === 'Internal' ? internalStructure : surface} changeSelectedInfo={changeSelectedInfo} />
+            <PlanetBottomArea selectedPlanet={selectedPlanet}></PlanetBottomArea>
         </div>
     )
 }
